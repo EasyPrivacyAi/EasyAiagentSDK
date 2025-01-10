@@ -10,6 +10,8 @@ npm install @easyprivacyai/agent-sdk
 
 More document about usage or demo/example can be found [here](https://github.com/EasyPrivacyAi/EasyAiagentSDK)
 
+![logo-banner](https://github.com/user-attachments/assets/ff6eba8f-95de-4fc4-a29e-0811647651eb)
+
 ## Key Features
 
 - ⏰ On-Chain real time data access .
