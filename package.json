@@ -1,0 +1,74 @@
+{
+    "name": "@easyprivacyai/agent-sdk",
+    "version": "0.0.1",
+    "description": "EasyPrivacyAi agent SDK tools . First onchain privacy Aiagent",
+    "main": "dist",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "test": "jest",
+        "build": "tsc",
+        "clean": "rm -rf dist",
+        "prepublishOnly": "npm run clean && npm run build",
+        "lint": "eslint .",
+        "pretty": "prettier . --write"
+    },
+    "author": {
+        "name": "wikig",
+        "url": "https://github.com/easyPrivacyAi"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@solana/spl-token": "^0.4.9",
+        "@solana/web3.js": "^1.95.8",
+        "bn.js": "^5.2.1",
+        "borsh": "^0.7.0",
+        "bs58": "^6.0.0",
+        "dotenv": "^16.4.7",
+        "libsodium": "^0.7.11",
+        "libsodium-wrappers-sumo": "^0.7.11"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.17.0",
+        "@types/crypto-js": "^4.1.1",
+        "@types/jest": "^28.1.8",
+        "@types/libsodium-wrappers-sumo": "^0.7.5",
+        "@types/sodium-native": "^2.3.5",
+        "@typescript-eslint/eslint-plugin": "^5.30.6",
+        "@typescript-eslint/parser": "^5.30.6",
+        "eslint": "^8.57.1",
+        "globals": "^15.14.0",
+        "jest": "^28.1.3",
+        "ts-jest": "^28.0.8",
+        "typescript": "5.6.3",
+        "typescript-eslint": "^8.19.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "/dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/EasyPrivacyAi/EasyAiagentSDK.git"
+    },
+    "bugs": {
+        "url": "https://github.com/EasyPrivacyAi/EasyAiagentSDK/issues"
+    },
+    "homepage": "https://github.com/EasyPrivacyAi/EasyAiagentSDK#readme",
+    "keywords": [
+        "web3",
+        "ai",
+        "ai-agent",
+        "privacy",
+        "TOR",
+        "TON"
+    ],
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "default": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    }
+}
