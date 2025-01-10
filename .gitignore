@@ -3,5 +3,4 @@ node_modules/
 *.swp
 *.swo
 dist/
-package-lock.json
 .env
